@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>CNLive Control Panel</title>
+    <style>
+      .container {
+        padding-top:200px;
+        text-align: center;
+      }
+      .title {
+        font-size: 32px;
+      }
+      .google-download-button {
+        margin-top: 20px;
+      }
+      .google-download-button button {
+        width: 138px;
+        height: 38px;
+        border: none;
+        line-height: 38px;
+        color: white;
+        border-radius: 6px;
+        background-color: #188ae2;
+      }
+      .qihu-tip {
+        margin-top: 20px;
+      }
+      .qihu-picture {
+        margin-top: 20px;
+      }
+      .qihu-picture img {
+        width: auto;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="google-tip title">
+        推荐使用谷歌浏览器
+      </div>
+      <div class="google-download-button">
+        <button id="google-download">前往下载</button>
+      </div>
+      <div class="qihu-tip title">
+        或者使用360浏览器极速模式
+      </div>
+      <div class="qihu-picture">
+        <img src="https://wjj.ys2.cnliveimg.com/1545983165685.png" alt="">
+      </div>
+    </div>
+    <script>
+      var btn = document.getElementById('google-download')
+      btn.onclick = function () {
+        window.open('https://www.google.cn/chrome')
+      }
+    </script>
+  </body>
+</html>
